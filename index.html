@@ -198,15 +198,27 @@
                                 <h5 class="mb-0 mt-4">Amazon PrimeVideo Clone</h5>
                                 <p>Amazon PrimeVideo is an online movie streaming platform</p>
                             </div>
+
                             <div class="col-lg-4 col-sm-6">
                                 <a href="https://shafeenahammed.github.io/Swiggy-Clone/">
                                     <div class="portfolio-img">
-                                        <img decoding="async" src="images/Swiggy.png" class="img-fluid w-100">
+                                        <img decoding="async" src="images/Swiggy2.png" class="img-fluid w-100">
                                         <div class="overlay"> <i class="fas fa-plus"></i></div>
                                     </div>
                                 </a>
                                 <h5 class="mb-0 mt-4">Swiggy Clone</h5>
                                 <p>Swiggy is an online food ordering platform</p>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6">
+                                <a href="https://shafeenahammed.github.io/GoogleStore-Clone/">
+                                    <div class="portfolio-img">
+                                        <img decoding="async" src="images/googleStore2.png" class="img-fluid w-100">
+                                        <div class="overlay"> <i class="fas fa-plus"></i></div>
+                                    </div>
+                                </a>
+                                <h5 class="mb-0 mt-4">Google Store Clone</h5>
+                                <p>Online store for google made devices and accessories</p>
                             </div>
                         </div>
                     </div>
@@ -238,7 +250,7 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 mb-4">
                     <div class="card rounded-0 border-0 p-0">
-                        <img decoding="async" src="./images/GCP blog.png">
+                        <img decoding="async" src="./images/gcp2.jfif" class="img-fluid">
                         <div class="blog_details">
                             <div class="blog_text text-center">
                                 <h5 class="text-white mb-0">GCP</h5>
@@ -247,6 +259,7 @@
                             </div>
                         </div>
                     </div>
+                    <h5 class="mb-0 mt-4">Google Cloud Platform</h5>
                 </div>
             </div>
         </div>
@@ -269,11 +282,13 @@
                                     <div class="form-group col-md-6">
                                         <label for="inputName">Name*</label>
                                         <input type="text" class="form-control" name="name" id="inputName" placeholder="Name"
-                                            required oninvalid="this.setCus" autocomplete="off">
+                                         aria-describedby="invalidName">
+                                        <div class="invalidName" id="invalidName" style="color: red
+                                        ; visibility: hidden;">Invalid name</div>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputPlace">Place</label>
-                                        <input type="text" class="form-control" name="place" id="inputPlace" placeholder="Place"
+                                        <input typde="text" class="form-control" name="place" id="inputPlace" placeholder="Place"
                                             autocomplete="off">
                                     </div>
                                 </div>
@@ -281,18 +296,23 @@
                                     <div class="form-group col-md-6">
                                         <label for="inputEmail">Email*</label>
                                         <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email"
-                                            required autocomplete="off">
+                                             aria-describedby="invalidEmail">
+                                            <div class="invalidEmail" id="invalidEmail" style="color: red
+                                            ; visibility: hidden;">Invalid email</div>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="inputMobile">Mobile*</label>
-                                        <input type="tel" class="form-control" name="mobile" id="inputMobile" placeholder="eg-9994445432" pattern="[0-9]{10}"
-                                            required autocomplete="off">
+                                        <input type="tel" class="form-control" name="mobile" id="inputMobile" placeholder="eg-9994445432" aria-describedby="invalidMobile">
+                                        <div class="invalidMobile" id="invalidMobile" style="color: red
+                                            ; visibility: hidden;">Invalid number</div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="Message">Message*</label>
-                                    <textarea class="form-control" name="message" cols="30" rows="10"
-                                        placeholder="Type your message here" required autocomplete="off"></textarea>
+                                    <textarea class="form-control" name="message" id="inputMessage" cols="30" rows="10"
+                                        placeholder="Type your message here" aria-describedby="typeMessage"></textarea>
+                                        <div class="invalidMessage" id="invalidMessage" style="color: red
+                                        ; visibility: hidden;">Invalid message</div>
                                 </div>
             
                                 <div class="form row pt-3 ">
